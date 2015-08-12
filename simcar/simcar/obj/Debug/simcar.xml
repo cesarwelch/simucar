@@ -6,6 +6,17 @@ simcar
 </name>
 </assembly>
 <members>
+<member name="M:simcar.Form1.add2">
+ <summary>
+         CheckForIllegalCrossThreadCalls = False
+  Do Until i = 10000
+       i = i + 1
+    Label2.Text = i
+Me.Refresh()
+Loop
+ 
+ </summary>
+</member>
 <member name="T:simcar.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
