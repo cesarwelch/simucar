@@ -25,7 +25,7 @@
 
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Label3.Text = 20
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -42,5 +42,15 @@
         Label1.Text = "12"
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Timer1.Start()
+    End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label3.Text = Val(Label3.Text) + 1
+        If (Val(Label3.Text) = 60) Then
+            Timer1.Interval = 1000
+            Label3.Text = 10
+        End If
+    End Sub
 End Class
