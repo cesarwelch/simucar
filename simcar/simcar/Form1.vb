@@ -10,6 +10,7 @@
             i2 = i2 + 1
 
             Label1.Text = i2
+
             Me.Refresh()
         Loop
 
@@ -36,4 +37,10 @@
         myThread2 = New System.Threading.Thread(AddressOf add2)
         myThread2.Start()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Label1.Text = "12"
+    End Sub
+
+
 End Class
